@@ -1,4 +1,4 @@
-module FontAwesome
+module IonIcons
   module Rails
     class Engine < ::Rails::Engine
     end

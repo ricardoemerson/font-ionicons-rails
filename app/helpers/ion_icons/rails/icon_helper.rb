@@ -1,4 +1,4 @@
-module FontAwesome
+module IonIcons
   module Rails
     module IconHelper
       # Creates an icon tag given an icon name and possible icon
@@ -6,31 +6,31 @@ module FontAwesome
       #
       # Examples
       #
-      #   fa_icon "camera-retro"
+      #   ion_icon "camera-retro"
       #   # => <i class="fa fa-camera-retro"></i>
       #
-      #   fa_icon "camera-retro", text: "Take a photo"
+      #   ion_icon "camera-retro", text: "Take a photo"
       #   # => <i class="fa fa-camera-retro"></i> Take a photo
-      #   fa_icon "chevron-right", text: "Get started", right: true
+      #   ion_icon "chevron-right", text: "Get started", right: true
       #   # => Get started <i class="fa fa-chevron-right"></i>
       #
-      #   fa_icon "camera-retro 2x"
+      #   ion_icon "camera-retro 2x"
       #   # => <i class="fa fa-camera-retro fa-2x"></i>
-      #   fa_icon ["camera-retro", "4x"]
+      #   ion_icon ["camera-retro", "4x"]
       #   # => <i class="fa fa-camera-retro fa-4x"></i>
-      #   fa_icon "spinner spin lg"
+      #   ion_icon "spinner spin lg"
       #   # => <i class="fa fa-spinner fa-spin fa-lg">
       #
-      #   fa_icon "quote-left 4x", class: "pull-left"
+      #   ion_icon "quote-left 4x", class: "pull-left"
       #   # => <i class="fa fa-quote-left fa-4x pull-left"></i>
       #
-      #   fa_icon "user", data: { id: 123 }
+      #   ion_icon "user", data: { id: 123 }
       #   # => <i class="fa fa-user" data-id="123"></i>
       #
-      #   content_tag(:li, fa_icon("check li", text: "Bulleted list item"))
+      #   content_tag(:li, ion_icon("check li", text: "Bulleted list item"))
       #   # => <li><i class="fa fa-check fa-li"></i> Bulleted list item</li>
-      def fa_icon(names = "flag", options = {})
-        classes = ["fa"]
+      def ion_icon(names = "flag", options = {})
+        classes = ["ion"]
         classes.concat Private.icon_names(names)
         classes.concat Array(options.delete(:class))
         text = options.delete(:text)
@@ -44,29 +44,29 @@ module FontAwesome
       #
       # Examples
       #
-      #   fa_stacked_icon "twitter", base: "square-o"
+      #   ion_stacked_icon "twitter", base: "square-o"
       #   # => <span class="fa-stack">
       #   # =>   <i class="fa fa-square-o fa-stack-2x"></i>
       #   # =>   <i class="fa fa-twitter fa-stack-1x"></i>
       #   # => </span>
       #
-      #   fa_stacked_icon "terminal inverse", base: "square", class: "pull-right", text: "Hi!"
+      #   ion_stacked_icon "terminal inverse", base: "square", class: "pull-right", text: "Hi!"
       #   # => <span class="fa-stack pull-right">
       #   # =>   <i class="fa fa-square fa-stack-2x"></i>
       #   # =>   <i class="fa fa-terminal fa-inverse fa-stack-1x"></i>
       #   # => </span> Hi!
       #
-      #   fa_stacked_icon "camera", base: "ban-circle", reverse: true
+      #   ion_stacked_icon "camera", base: "ban-circle", reverse: true
       #   # => <span class="fa-stack">
       #   # =>   <i class="fa fa-camera fa-stack-1x"></i>
       #   # =>   <i class="fa fa-ban-circle fa-stack-2x"></i>
       #   # => </span>
-      def fa_stacked_icon(names = "flag", options = {})
+      def ion_stacked_icon(names = "flag", options = {})
         classes = Private.icon_names("stack").concat(Array(options.delete(:class)))
         base_names = Private.array_value(options.delete(:base) || "square-o").push("stack-2x")
         names = Private.array_value(names).push("stack-1x")
-        base = fa_icon(base_names, options.delete(:base_options) || {})
-        icon = fa_icon(names, options.delete(:icon_options) || {})
+        base = ion_icon(base_names, options.delete(:base_options) || {})
+        icon = ion_icon(names, options.delete(:icon_options) || {})
         icons = [base, icon]
         icons.reverse! if options.delete(:reverse)
         text = options.delete(:text)
@@ -86,7 +86,7 @@ module FontAwesome
         end
 
         def self.icon_names(names = [])
-          array_value(names).map { |n| "fa-#{n}" }
+          array_value(names).map { |n| "ion-#{n}" }
         end
 
         def self.array_value(value = [])
