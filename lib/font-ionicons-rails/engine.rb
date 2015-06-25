@@ -1,4 +1,4 @@
-module IonIcons
+module FontIonicons
   module Rails
     class Engine < ::Rails::Engine
     end

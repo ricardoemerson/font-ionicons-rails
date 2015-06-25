@@ -1,4 +1,4 @@
-module IonIcons
+module FontIonicons
   module Rails
     module IconHelper
       # Creates an icon tag given an icon name and possible icon

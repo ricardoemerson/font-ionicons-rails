@@ -1,10 +1,10 @@
 require 'test_helper'
 
-class IonIconsRailsTest < ActionDispatch::IntegrationTest
+class FontIoniconsRailsTest < ActionDispatch::IntegrationTest
   teardown { clean_sprockets_cache }
 
   test 'engine is loaded' do
-    assert_equal ::Rails::Engine, IonIcons::Rails::Engine.superclass
+    assert_equal ::Rails::Engine, FontIonicons::Rails::Engine.superclass
   end
 
   test 'fonts are served' do
@@ -25,7 +25,7 @@ class IonIconsRailsTest < ActionDispatch::IntegrationTest
 
   test 'stylesheets contain asset pipeline references to fonts' do
     get '/assets/ionicons.css'
-    v = IonIcons::Rails::IONICONS_VERSION
+    v = FontIonicons::Rails::FI_VERSION
     assert_match "/assets/ionicons.eot?v=#{v}",  response.body
     assert_match "/assets/ionicons.eot?#iefix&v=#{v}", response.body
     assert_match "/assets/ionicons.woff?v=#{v}", response.body

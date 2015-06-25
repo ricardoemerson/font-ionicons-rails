@@ -1,19 +1,19 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/ionicons-rails/version', __FILE__)
+require File.expand_path('../lib/font-ionicons-rails/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Ricardo Emerson"]
   gem.email         = ["ricardo_emerson@yahoo.com.br"]
   gem.description   = "The premium icon font for Ionic Framework."
   gem.summary       = "an asset gemification of the ionicons icon font library"
-  gem.homepage      = "https://github.com/ricardoemerson/ionicons-rails"
+  gem.homepage      = "https://github.com/ricardoemerson/font-ionicons-rails"
   gem.licenses      = ["MIT"]
 
   gem.files         = Dir["{app,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   gem.test_files    = Dir["test/**/*"]
-  gem.name          = "ionicons-rails"
+  gem.name          = "font-ionicons-rails"
   gem.require_paths = ["lib"]
-  gem.version       = IonIcons::Rails::VERSION
+  gem.version       = FontIonicons::Rails::VERSION
 
   gem.add_dependency "railties", ">= 3.2", "< 5.0"
 

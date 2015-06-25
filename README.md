@@ -1,12 +1,12 @@
-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.0-blue.svg)](https://github.com/ricardoemerson/ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/ionicons-rails)
-===============================================================================================================================================================================================================================================================
+font-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.0-blue.svg)](https://github.com/ricardoemerson/font-ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/font-ionicons-rails)
+==============================================================================================================================================================================================================================================================================
 
-The ionicons-rails provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.
+The font-ionicons-rails provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 
 Installation
 ------------
 
-Add this to your Gemfile:
+Add this to your Gemfile: font-
 
 ```ruby
 gem "ionicons-rails"
@@ -15,7 +15,7 @@ gem "ionicons-rails"
 or
 
 ```ruby
-gem "ionicons-rails", git: 'https://github.com/ricardoemerson/ionicons-rails.git'
+gem "font-ionicons-rails", git: 'https://github.com/ricardoemerson/font-ionicons-rails.git'
 ```
 
 and run `bundle install`.
@@ -73,4 +73,4 @@ License
 Special Thanks
 --------------
 
-The ionicons-rails was inspired by [font-awesome-rails](https://github.com/bokmann/font-awesome-rails).
+The font-ionicons-rails was inspired by [font-awesome-rails](https://github.com/bokmann/font-awesome-rails).

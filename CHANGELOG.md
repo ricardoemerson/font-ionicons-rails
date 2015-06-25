@@ -1,4 +1,4 @@
-See [GitHub Releases](https://github.com/bokmann/font-awesome-rails/releases)
+See [GitHub Releases](https://github.com/ricardoemerson/font-ionicons-rails/releases)
 
 Changes
 -------
@@ -10,6 +10,6 @@ Changes
 ```
 
 ```css
-  /* IonIcons Syntax */
+  /* FontIonicons Syntax */
   <i class="ion-flag"></i>
 ```

@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class IonIcons::Rails::IconHelperTest < ActionView::TestCase
+class FontIonicons::Rails::IconHelperTest < ActionView::TestCase
   test '#ion_icon with no args should render a flag icon' do
     assert_icon i('ion-flag')
   end
