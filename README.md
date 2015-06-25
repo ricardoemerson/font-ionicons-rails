@@ -1,12 +1,18 @@
-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.0.0-blue.svg)](https://github.com/ricardoemerson/ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/ionicons-rails)
+ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.0-blue.svg)](https://github.com/ricardoemerson/ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/ionicons-rails)
 ===============================================================================================================================================================================================================================================================
 
-ionicons-rails provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.
+The ionicons-rails provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 
 Installation
 ------------
 
 Add this to your Gemfile:
+
+```ruby
+gem "ionicons-rails"
+```
+
+or
 
 ```ruby
 gem "ionicons-rails", git: 'https://github.com/ricardoemerson/ionicons-rails.git'
@@ -59,19 +65,12 @@ content_tag(:li, ion_icon("check li", text: "Bulleted list item"))
 # => <li><i class="ion-check fa-li"></i> Bulleted list item</li>
 ```
 
-Versioning
-----------
-
-Versioning follows the core releases of Font-Awesome which follows Semantic Versioning 2.0 as defined at http://semver.org. We will do our best not to make any breaking changes until Font-Awesome core makes a major version bump.
-
 License
 -------
 
--	The [Font Awesome](http://fortawesome.github.com/Font-Awesome) font is licensed under the [SIL Open Font License](http://scripts.sil.org/OFL).
--	[Font Awesome](http://fortawesome.github.com/Font-Awesome) CSS files are licensed under the[MIT License](http://opensource.org/licenses/mit-license.html).
--	The remainder of the font-awesome-rails project is licensed under the[MIT License](http://opensource.org/licenses/mit-license.html).
+-	The [ionicons](http://ionicons.com/) font is licensed under the [MIT license.](http://opensource.org/licenses/MIT).
 
 Special Thanks
 --------------
 
-ionicons-rails was inspired by [font-awesome-rails](https://github.com/bokmann/font-awesome-rails).
+The ionicons-rails was inspired by [font-awesome-rails](https://github.com/bokmann/font-awesome-rails).

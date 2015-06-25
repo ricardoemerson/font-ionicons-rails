@@ -6,36 +6,27 @@ module IonIcons
       #
       # Examples
       #
-      #   ion_icon "camera-retro"
-      #   # => <i class="fa fa-camera-retro"></i>
+      #   ion_icon "camera"
+      #   # => <i class="ion-camera"></i>
       #
-      #   ion_icon "camera-retro", text: "Take a photo"
-      #   # => <i class="fa fa-camera-retro"></i> Take a photo
+      #   ion_icon "camera", text: "Take a photo"
+      #   # => <i class="ion-camera"></i> Take a photo
+      #
       #   ion_icon "chevron-right", text: "Get started", right: true
-      #   # => Get started <i class="fa fa-chevron-right"></i>
-      #
-      #   ion_icon "camera-retro 2x"
-      #   # => <i class="fa fa-camera-retro fa-2x"></i>
-      #   ion_icon ["camera-retro", "4x"]
-      #   # => <i class="fa fa-camera-retro fa-4x"></i>
-      #   ion_icon "spinner spin lg"
-      #   # => <i class="fa fa-spinner fa-spin fa-lg">
-      #
-      #   ion_icon "quote-left 4x", class: "pull-left"
-      #   # => <i class="fa fa-quote-left fa-4x pull-left"></i>
+      #   # => Get started <i class="ion-chevron-right"></i>
       #
       #   ion_icon "user", data: { id: 123 }
-      #   # => <i class="fa fa-user" data-id="123"></i>
+      #   # => <i class="ion-user" data-id="123"></i>
       #
       #   content_tag(:li, ion_icon("check li", text: "Bulleted list item"))
-      #   # => <li><i class="fa fa-check fa-li"></i> Bulleted list item</li>
-      def ion_icon(names = "flag", options = {})
+      #   # => <li><i class="ion-check fa-li"></i> Bulleted list item</li>
+      def ion_icon(names = 'flag', options = {})
         classes = []
         classes.concat Private.icon_names(names)
         classes.concat Array(options.delete(:class))
         text = options.delete(:text)
         right_icon = options.delete(:right)
-        icon = content_tag(:i, nil, options.merge(:class => classes))
+        icon = content_tag(:i, nil, options.merge(class: classes))
         Private.icon_join(icon, text, right_icon)
       end
 
@@ -46,7 +37,7 @@ module IonIcons
           return icon if text.blank?
           elements = [icon, ERB::Util.html_escape(text)]
           elements.reverse! if reverse_order
-          safe_join(elements, " ")
+          safe_join(elements, ' ')
         end
 
         def self.icon_names(names = [])
