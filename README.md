@@ -41,7 +41,7 @@ If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html
 @import "ionicons";
 ```
 
-If you use the[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html), add this to your `application.css.sass` file:
+If you use the [Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html), add this to your `application.css.sass` file:
 
 ```sass
 @import ionicons
@@ -49,7 +49,7 @@ If you use the[Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDEN
 
 ### Helpers
 
-There are also some helpers (`ion_icon` and `ion_stacked_icon`) for improve use.
+There are also some helpers (`ion_icon`) for improve use.
 
 ```ruby
 ion_icon "camera"
@@ -68,7 +68,7 @@ content_tag(:li, ion_icon("check li", text: "Bulleted list item"))
 License
 -------
 
--	The [ionicons](http://ionicons.com/) font is licensed under the [MIT license.](http://opensource.org/licenses/MIT).
+-	The [ionicons](http://ionicons.com/) font is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 Special Thanks
 --------------
