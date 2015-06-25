@@ -7,7 +7,7 @@ Gem::Specification.new do |gem|
   gem.description   = "The premium icon font for Ionic Framework."
   gem.summary       = "an asset gemification of the ionicons icon font library"
   gem.homepage      = "https://github.com/ricardoemerson/ionicons-rails"
-  gem.licenses      = ["MIT", "SIL Open Font License"]
+  gem.licenses      = ["MIT"]
 
   gem.files         = Dir["{app,lib}/**/*"] + ["LICENSE", "Rakefile", "README.md"]
   gem.test_files    = Dir["test/**/*"]
