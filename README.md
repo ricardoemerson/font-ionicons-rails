@@ -6,10 +6,10 @@ The font-ionicons-rails provides the [ionicons](http://ionicons.com/) web fonts 
 Installation
 ------------
 
-Add this to your Gemfile: font-
+Add this to your Gemfile:
 
 ```ruby
-gem "ionicons-rails"
+gem "font-ionicons-rails"
 ```
 
 or
