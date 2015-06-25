@@ -61,8 +61,8 @@ ion_icon "camera", text: "Take a photo"
 ion_icon "chevron-right", text: "Get started", right: true
 # => Get started <i class="ion-chevron-right"></i>
 
-content_tag(:li, ion_icon("check li", text: "Bulleted list item"))
-# => <li><i class="ion-check fa-li"></i> Bulleted list item</li>
+content_tag(:li, ion_icon("checkmark-round", text: "Bulleted list item"))
+# => <li><i class="ion-checkmark-round"></i> Bulleted list item</li>
 ```
 
 License
