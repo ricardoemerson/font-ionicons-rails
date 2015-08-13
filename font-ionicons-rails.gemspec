@@ -4,7 +4,7 @@ require File.expand_path('../lib/font-ionicons-rails/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Ricardo Emerson"]
   gem.email         = ["ricardo_emerson@yahoo.com.br"]
-  gem.description   = "The premium icon font for Ionic Framework."
+  gem.description   = "The Ionicons for Ruby on Rails with helpers for better use."
   gem.summary       = "an asset gemification of the ionicons icon font library"
   gem.homepage      = "https://github.com/ricardoemerson/font-ionicons-rails"
   gem.licenses      = ["MIT"]
