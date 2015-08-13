@@ -6,7 +6,8 @@ Changes
 ```
 | Version | Notes / Other additions                                                   |
 |---------+---------------------------------------------------------------------------|
-| 2.0.1.0 | 2.0.1 Firs release of gem                                                 |
+| 2.0.1.0 | First release of gem                                                      |
+| 2.0.1.1 | Update gem description on Rubygems.org                                    |
 ```
 
 ```css
