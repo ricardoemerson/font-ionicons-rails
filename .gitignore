@@ -10,3 +10,4 @@ gemfiles/vendor/ruby
 .sass-cache
 .tags
 .tags1
+.DS_Store
