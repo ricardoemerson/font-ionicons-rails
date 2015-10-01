@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Font Ionicons Rails by ricardoemerson</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Font Ionicons Rails</h1>
+      <h2 class="project-tagline">Rails gem of the premium icon font for Ionic Framework.</h2>
+      <a href="https://github.com/ricardoemerson/font-ionicons-rails" class="btn">View on GitHub</a>
+      <a href="https://github.com/ricardoemerson/font-ionicons-rails/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ricardoemerson/font-ionicons-rails/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="font-ionicons-rails--" class="anchor" href="#font-ionicons-rails--" aria-hidden="true"><span class="octicon octicon-link"></span></a>font-ionicons-rails <a href="https://github.com/ricardoemerson/font-ionicons-rails"><img src="https://img.shields.io/badge/gem-v2.0.1.2-blue.svg" alt="Gem Version"></a> <a href="https://github.com/ricardoemerson/font-ionicons-rails"><img src="https://img.shields.io/badge/build-passing-green.svg" alt="Build Status"></a>
+</h1>
+
+<p>The font-ionicons-rails provides the <a href="http://ionicons.com/">ionicons</a> web fonts and stylesheets as a Rails engine for use with the asset pipeline.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this to your Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>font-ionicons-rails<span class="pl-pds">"</span></span></pre></div>
+
+<p>or</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>font-ionicons-rails<span class="pl-pds">"</span></span>, <span class="pl-c1">git:</span> <span class="pl-s"><span class="pl-pds">'</span>https://github.com/ricardoemerson/font-ionicons-rails.git<span class="pl-pds">'</span></span></pre></div>
+
+<p>and run <code>bundle install</code>.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>In your <code>application.css</code>, include the css file:</p>
+
+<div class="highlight highlight-source-css"><pre><span class="pl-c">/*</span>
+<span class="pl-c"> *= require ionicons</span>
+<span class="pl-c"> */</span></pre></div>
+
+<p>Then restart your webserver if it was previously running.</p>
+
+<h3>
+<a id="sass-support" class="anchor" href="#sass-support" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sass Support</h3>
+
+<p>If you prefer <a href="http://sass-lang.com/documentation/file.SASS_REFERENCE.html">SCSS</a>, add this to your<code>application.css.scss</code> file:</p>
+
+<div class="highlight highlight-source-scss"><pre><span class="pl-k">@import</span> "<span class="pl-v">ionicons</span>";</pre></div>
+
+<p>If you use the <a href="http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html">Sass indented syntax</a>, add this to your <code>application.css.sass</code> file:</p>
+
+<div class="highlight highlight-source-sass"><pre><span class="pl-k">@import</span> ionicons</pre></div>
+
+<h3>
+<a id="helpers" class="anchor" href="#helpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Helpers</h3>
+
+<p>There are also some helpers (<code>ion_icon</code>) for improve use.</p>
+
+<div class="highlight highlight-source-ruby"><pre>ion_icon <span class="pl-s"><span class="pl-pds">"</span>camera<span class="pl-pds">"</span></span>
+<span class="pl-c"># =&gt; &lt;i class="ion-camera"&gt;&lt;/i&gt;</span>
+
+ion_icon <span class="pl-s"><span class="pl-pds">"</span>camera<span class="pl-pds">"</span></span>, <span class="pl-c1">text:</span> <span class="pl-s"><span class="pl-pds">"</span>Take a photo<span class="pl-pds">"</span></span>
+<span class="pl-c"># =&gt; &lt;i class="ion-camera"&gt;&lt;/i&gt; Take a photo</span>
+
+ion_icon <span class="pl-s"><span class="pl-pds">"</span>chevron-right<span class="pl-pds">"</span></span>, <span class="pl-c1">text:</span> <span class="pl-s"><span class="pl-pds">"</span>Get started<span class="pl-pds">"</span></span>, <span class="pl-c1">right:</span> <span class="pl-c1">true</span>
+<span class="pl-c"># =&gt; Get started &lt;i class="ion-chevron-right"&gt;&lt;/i&gt;</span>
+
+content_tag(<span class="pl-c1">:li</span>, ion_icon(<span class="pl-s"><span class="pl-pds">"</span>checkmark-round<span class="pl-pds">"</span></span>, <span class="pl-c1">text:</span> <span class="pl-s"><span class="pl-pds">"</span>Bulleted list item<span class="pl-pds">"</span></span>))
+<span class="pl-c"># =&gt; &lt;li&gt;&lt;i class="ion-checkmark-round"&gt;&lt;/i&gt; Bulleted list item&lt;/li&gt;</span></pre></div>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<ul>
+<li>  The <a href="http://ionicons.com/">ionicons</a> font is licensed under the <a href="http://opensource.org/licenses/MIT">MIT license</a>.</li>
+</ul>
+
+<h2>
+<a id="special-thanks" class="anchor" href="#special-thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Special Thanks</h2>
+
+<p>The font-ionicons-rails was inspired by <a href="https://github.com/bokmann/font-awesome-rails">font-awesome-rails</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ricardoemerson/font-ionicons-rails">Font Ionicons Rails</a> is maintained by <a href="https://github.com/ricardoemerson">ricardoemerson</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
