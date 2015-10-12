@@ -9,6 +9,7 @@ Changes
 | 2.0.1.0 | First release of gem                                                      |
 | 2.0.1.1 | Update gem description on Rubygems.org                                    |
 | 2.0.1.2 | Update the URL of the documentation                                       |
+| 2.0.1.3 | Update gem description on Rubygems.org                                    |
 ```
 
 ```css
