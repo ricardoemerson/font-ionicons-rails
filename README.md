@@ -1,4 +1,4 @@
-font-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.4-blue.svg)](https://github.com/ricardoemerson/font-ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/font-ionicons-rails)
+font-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.5-blue.svg)](https://github.com/ricardoemerson/font-ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/font-ionicons-rails)
 ==============================================================================================================================================================================================================================================================================
 
 The font-ionicons-rails is the best gem made for ionicons and provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.

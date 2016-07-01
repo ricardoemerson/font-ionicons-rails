@@ -11,6 +11,7 @@ Changes
 | 2.0.1.2 | Update the URL of the documentation                                                  |
 | 2.0.1.3 | Update gem description on Rubygems.org                                               |
 | 2.0.1.4 | Fix for precompile font files assets to avoid to included manually on Heroku server. |
+| 2.0.1.5 | Add support to Rails 5.                                                              |
 ```
 
 ```css
