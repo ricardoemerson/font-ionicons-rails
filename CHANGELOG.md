@@ -13,6 +13,7 @@ Changes
 | 2.0.1.4 | Fix for precompile font files assets to avoid to included manually on Heroku server. |
 | 2.0.1.5 | Add support to Rails 5.                                                              |
 | 2.0.1.6 | Add support to Rails 6.                                                              |
+| 2.0.1.7 | Update Ionic assets version to 4.6.3.                                                |
 ```
 
 ```css
