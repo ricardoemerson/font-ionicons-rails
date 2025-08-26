@@ -1,10 +1,8 @@
-font-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.6-blue.svg)](https://github.com/ricardoemerson/font-ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/font-ionicons-rails)
-==============================================================================================================================================================================================================================================================================
+# font-ionicons-rails [![Gem Version](https://img.shields.io/badge/gem-v2.0.1.8-blue.svg)](https://github.com/ricardoemerson/font-ionicons-rails) [![Build Status](https://img.shields.io/badge/build-passing-green.svg)](https://github.com/ricardoemerson/font-ionicons-rails)
 
 The font-ionicons-rails is the best gem made for ionicons and provides the [ionicons](http://ionicons.com/) web fonts and stylesheets as a Rails engine for use with the asset pipeline.
 
-Installation
-------------
+## Installation
 
 Add this to your Gemfile:
 
@@ -20,8 +18,7 @@ gem "font-ionicons-rails", git: 'https://github.com/ricardoemerson/font-ionicons
 
 and run `bundle install`.
 
-Usage
------
+## Usage
 
 In your `application.css`, include the css file:
 
@@ -38,7 +35,7 @@ Then restart your webserver if it was previously running.
 If you prefer [SCSS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html), add this to your`application.css.scss` file:
 
 ```scss
-@import "ionicons";
+@import 'ionicons';
 ```
 
 If you use the [Sass indented syntax](http://sass-lang.com/docs/yardoc/file.INDENTED_SYNTAX.html), add this to your `application.css.sass` file:
@@ -65,12 +62,10 @@ content_tag(:li, ion_icon("checkmark-round", text: "Bulleted list item"))
 # => <li><i class="ion-checkmark-round"></i> Bulleted list item</li>
 ```
 
-License
--------
+## License
 
--	The [ionicons](http://ionicons.com/) font is licensed under the [MIT license](http://opensource.org/licenses/MIT).
+- The [ionicons](http://ionicons.com/) font is licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
-Special Thanks
---------------
+## Special Thanks
 
 The font-ionicons-rails was inspired by [font-awesome-rails](https://github.com/bokmann/font-awesome-rails) made by David Bock.
