@@ -15,10 +15,10 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = FontIonicons::Rails::VERSION
 
-  gem.add_dependency "railties", ">= 3.2", "< 8.0"
+  gem.add_dependency "railties", ">= 3.2", "< 9.0"
 
-  gem.add_development_dependency 'activesupport', '~> 0'
-  gem.add_development_dependency 'sass-rails', '~> 0'
+  gem.add_development_dependency 'activesupport'
+  gem.add_development_dependency 'sass-rails'
 
   gem.required_ruby_version = '>= 1.9.3'
 end
